@@ -4,7 +4,7 @@ import axios from "axios"
 import { BASE_URL } from "../../constants/BASE_URL"
 import like from "../../img/icon-reaction-up.svg"
 import dislike from "../../img/icon-reaction-down.svg"
-import coment from "../../img/chat-box-icon.svg"
+import comment from "../../img/chat-box-icon.svg"
 
 function PostCard (props){
     const context = useContext(GlobalContext)
@@ -56,7 +56,7 @@ function PostCard (props){
                 <img src={dislike} onClick={()=>dislikePost(props.post.id)} alt="dislikeBotton"/> 
             </span> 
             <span className="subText" onClick={()=>showPost(props.post.id)}>
-                <img src={coment} alt="comentBotton" />
+                <img src={comment} alt="commentBotton" />
                 {props.post.comments}
             </span>
         </p>
