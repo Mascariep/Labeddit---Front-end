@@ -1,5 +1,5 @@
-import axios from "axios"
-import { BASE_URL } from "../constants/BASE_URL"
+//import axios from "axios"
+//import { BASE_URL } from "../constants/BASE_URL"
 import { useState, useEffect } from "react"
 
 function GlobalState(){
@@ -19,15 +19,21 @@ function GlobalState(){
     const [alertMessage, setAlertMessage] = useState('')
 
     return{
-        posts, setPosts,
-        urlPost, setUrlPost,
-        loading, setLoading,
-        modal, setModal,
-        actionModal, setActionModal,
-        alertModal, setAlertModal,
-        alertMessage, setAlertMessage
+        posts, 
+        setPosts,
+        urlPost, 
+        setUrlPost,
+        loading, 
+        setLoading,
+        modal, 
+        setModal,
+        actionModal, 
+        setActionModal,
+        alertModal, 
+        setAlertModal,
+        alertMessage, 
+        setAlertMessage
     }
-    
 }
 
 export default GlobalState
