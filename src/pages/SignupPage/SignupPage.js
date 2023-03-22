@@ -9,7 +9,7 @@ import { BASE_URL } from "../../constants/BASE_URL"
 function SignupPage (){
     const navigate = useNavigate()
     const [form, setForm] = useState({
-        username: '',
+        name: '',
         email: '',
         password: '',
     })
@@ -23,7 +23,7 @@ function SignupPage (){
         try {
 
             let body ={
-                username: form.username,
+                name: form.name,
                 email: form.email,
                 password: form.password,
             }
@@ -44,7 +44,7 @@ function SignupPage (){
                     <h1>Olá, boas vindas ao LabEddit ;D</h1>
                 </div>
                 <div>
-                    <input value={form.username} name="username" onChange={onChangeForm} placeholder="Apelido"/>
+                    <input value={form.name} name="name" onChange={onChangeForm} placeholder="Apelido"/>
                     <input value={form.email} name="email" onChange={onChangeForm} placeholder="E-mail"/>
                     <input value={form.password} name="password" onChange={onChangeForm} placeholder="Senha"/>         
                 </div>
